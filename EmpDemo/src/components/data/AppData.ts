@@ -1,73 +1,10 @@
 export const ModulesList = [
   {
     "Id": 1,
-    "ModuleName": "Employee Records",
-    "Icon": "FaUsers",
-    "Route": "/employee-records",
-    "StrCode": "MOD_NAME_EMPLOYEE_RECORDS"
-  },
-  {
-    "Id": 2,
-    "ModuleName": "Calendar",
-    "Icon": "FaCalendarAlt",
-    "Route": "/demo",
-    "StrCode": "MOD_NAME_CALENDAR"
-  },
-  {
-    "Id": 3,
-    "ModuleName": "Sales & Marketing",
-    "Icon": "FaBriefcase",
-    "Route": "/sales-marketing",
-    "StrCode": "MOD_NAME_SALES_MARKETING"
-  },
-  {
-    "Id": 4,
     "ModuleName": "Reports",
     "Icon": "FaChartBar",
-    "Route": "/reports",
+    "Route": "/employee-records",
     "StrCode": "MOD_NAME_REPORTS"
-  },
-  {
-    "Id": 5,
-    "ModuleName": "Insurance",
-    "Icon": "FaShieldAlt",
-    "Route": "/insurance",
-    "StrCode": "MOD_NAME_INSURANCE"
-  },
-  {
-    "Id": 6,
-    "ModuleName": "Investments",
-    "Icon": "FaMoneyBill",
-    "Route": "/investments",
-    "StrCode": "MOD_NAME_INVESTMENTS"
-  },
-  {
-    "Id": 7,
-    "ModuleName": "Commission Utilities",
-    "Icon": "FaTools",
-    "Route": "/commission-utilities",
-    "StrCode": "MOD_NAME_COMMISSION_UTILITIES"
-  },
-  {
-    "Id": 8,
-    "ModuleName": "Utilities",
-    "Icon": "FaCogs",
-    "Route": "/utilities",
-    "StrCode": "MOD_NAME_UTILITIES"
-  },
-  {
-    "Id": 9,
-    "ModuleName": "Setup",
-    "Icon": "FaWrench",
-    "Route": "/setup",
-    "StrCode": "MOD_NAME_SETUP"
-  },
-  {
-    "Id": 10,
-    "ModuleName": "Integrations",
-    "Icon": "FaLink",
-    "Route": "/integrations",
-    "StrCode": "MOD_NAME_INTEGRATIONS"
   }
 ]
 
@@ -94,45 +31,15 @@ export const LanguageList = [
 export const TabsListArray = [
   {
     Id: 1,
-    TabName: "Employee",
-    StrCode: "TAB_NAME_EMPLOYEE",
+    TabName: "Reports",
+    StrCode: "TAB_NAME_REPORTS",
     ComponentID: null
   },
   {
     Id: 2,
-    TabName: "List",
-    StrCode: "TAB_NAME_EMPLOYEE_LIST",
-    ComponentID: 101
-  },
-  {
-    Id: 3,
-    TabName: "Details",
-    StrCode: "TAB_NAME_EMPLOYEE_DETAILS",
-    ComponentID: 102
-  },
-  {
-    Id: 4,
-    TabName: "Role",
-    StrCode: "TAB_NAME_ROLE",
-    ComponentID: null
-  },
-  {
-    Id: 5,
-    TabName: "Role List",
-    StrCode: "TAB_NAME_ROLE_LIST",
-    ComponentID: 103
-  },
-  {
-    Id: 6,
-    TabName: "Role Permission",
-    StrCode: "TAB_NAME_ROLE_PERMISSION",
-    ComponentID: 104
-  },
-  {
-    Id: 7,
-    TabName: "Department",
-    StrCode: "TAB_NAME_DEPARTMENT",
-    ComponentID: 105
+    TabName: "Reports List",
+    StrCode: "TAB_NAME_REPORTS_LIST",
+    ComponentID: 100
   }
 ];
 

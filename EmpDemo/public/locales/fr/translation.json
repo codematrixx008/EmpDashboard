@@ -10,7 +10,7 @@
     "LANGUAGES": "Changer de langue"
   },
   "Modules": {
-    "MOD_NAME_EMPLOYEE_RECORDS": "Dossiers des employés",
+    "MOD_NAME_REPORTS": "Dossiers des employés",
     "MOD_NAME_CALENDAR": "Calendrier",
     "MOD_NAME_SALES_MARKETING": "Ventes et marketing",
     "MOD_NAME_REPORTS": "Rapports",
@@ -22,8 +22,8 @@
     "MOD_NAME_INTEGRATIONS": "Intégrations"
   },
   "TABS": {
-    "TAB_NAME_EMPLOYEE": "Employé",
-    "TAB_NAME_EMPLOYEE_LIST": "Liste",
+    "TAB_NAME_REPORTS": "Employé",
+    "TAB_NAME_REPORTS_LIST": "Liste",
     "TAB_NAME_EMPLOYEE_DETAILS": "Détails",
     "TAB_NAME_ROLE": "Rôle",
     "TAB_NAME_ROLE_LIST": "Liste des rôles",

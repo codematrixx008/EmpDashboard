@@ -1,8 +1,6 @@
 {
   "HEADER": {
     "profile_name": "Profile Name",
-    "ADVANCED_SEARCH": "Advanced Search",
-    "NOTIFICATIONS": "Notifications",
     "PROFILE": "Profile",
     "SEARCH": "Search",
     "DASHBOARD": "Dashboard",
@@ -10,25 +8,11 @@
     "LANGUAGES": "Change Language"
   },
   "Modules": {
-    "MOD_NAME_EMPLOYEE_RECORDS": "Employee Records",
-    "MOD_NAME_CALENDAR": "Calendar",
-    "MOD_NAME_SALES_MARKETING": "Sales & Marketing",
-    "MOD_NAME_REPORTS": "Reports",
-    "MOD_NAME_INSURANCE": "Insurance",
-    "MOD_NAME_INVESTMENTS": "Investments",
-    "MOD_NAME_COMMISSION_UTILITIES": "Commission Utilities",
-    "MOD_NAME_UTILITIES": "Utilities",
-    "MOD_NAME_SETUP": "Setup",
-    "MOD_NAME_INTEGRATIONS": "Integrations"
+    "MOD_NAME_REPORTS": "Reports"
   },
   "TABS": {
-    "TAB_NAME_EMPLOYEE": "Employee",
-    "TAB_NAME_EMPLOYEE_LIST": "List",
-    "TAB_NAME_EMPLOYEE_DETAILS": "Details",
-    "TAB_NAME_ROLE": "Role",
-    "TAB_NAME_ROLE_LIST": "Role List",
-    "TAB_NAME_ROLE_PERMISSION": "Role Permission",
-    "TAB_NAME_DEPARTMENT": "Department"
+    "TAB_NAME_REPORTS": "Reports",
+    "TAB_NAME_REPORTS_LIST": "List"
   },
   "MENU_NAME": {
     "MENU_NAME_ADD": "Add",

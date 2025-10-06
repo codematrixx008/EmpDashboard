@@ -49,7 +49,7 @@ export default function Header({ toggleSidebar }) {
     getCachedLanguageData();
   }, []);
 
-  const changeDropdownLanguage = (ID, Code) => {
+  const changeDropdownLanguage = (ID:any, Code:any) => {
     // change current language and set the current language in cache
     changeLanguage(Code);
     caches.open("login-cache").then(cache => {
@@ -62,10 +62,6 @@ export default function Header({ toggleSidebar }) {
     });
   }
 
-  const handleHomeClick = () => {
-    navigate("/")
-    dispatch(setActiveModule(null));
-  }
 
 const handleLogout = async () => {
   try {
@@ -103,44 +99,6 @@ const handleLogout = async () => {
               &#9776;
             </button>
           </CustomTooltip>
-
-          <div className="icon-buttons">
-            <CustomTooltip tooltipText={t('HEADER.DASHBOARD')}>
-              <button onClick={() => handleHomeClick()} className="ct-dropdown-button">
-                <House />
-              </button>
-            </CustomTooltip>
-          </div>
-
-          <div className="search-bar">
-            <select className="autocomplete-input">
-              <option value="" disabled selected>
-                Select an option
-              </option>
-              {searchDropDownData.map((item, index) => (
-                <option key={index} value={item.label} className="ct-dropdown-option">
-                  {item.label}
-                </option>
-              ))}
-            </select>
-
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Search"
-            />
-            <CustomTooltip tooltipText={t('HEADER.SEARCH')}>
-              <button className="search-button" onClick={() => alert("Search Button Clicked")}>
-                <Search />
-              </button>
-            </CustomTooltip>
-          </div>
-
-          <CustomTooltip tooltipText={t('HEADER.ADVANCED_SEARCH')}>
-            <button className="text-button search-bar-button">
-              {t('HEADER.ADVANCED_SEARCH')}
-            </button>
-          </CustomTooltip>
         </div>
 
         <div className="icon-buttons">
@@ -175,23 +133,6 @@ const handleLogout = async () => {
             </Dropdown.Menu>
           </Dropdown>
 
-          <Dropdown>
-            <CustomTooltip tooltipText={t('HEADER.LANGUAGES')} >
-              <Dropdown.Toggle variant="light" className="ct-dropdown-button">
-                <Globe size={16} strokeWidth={2} />
-              </Dropdown.Toggle>
-            </CustomTooltip>
-
-            <Dropdown.Menu>
-              {LanguageList.map((langData) => {
-                return (
-                  <Dropdown.Item key={langData.ID} onClick={() => changeDropdownLanguage(langData.ID, langData.LanguageCode)} href="#">
-                    {langData.LanguageName}
-                  </Dropdown.Item>
-                )
-              })}
-            </Dropdown.Menu>
-          </Dropdown>
         </div>
       </div>
     </header>

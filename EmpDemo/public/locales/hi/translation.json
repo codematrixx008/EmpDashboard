@@ -10,7 +10,7 @@
     "LANGUAGES": "भाषा बदलें"
   },
   "Modules": {
-    "MOD_NAME_EMPLOYEE_RECORDS": "कर्मचारी अभिलेख",
+    "MOD_NAME_REPORTS": "कर्मचारी अभिलेख",
     "MOD_NAME_CALENDAR": "कैलेंडर",
     "MOD_NAME_SALES_MARKETING": "बिक्री और विपणन",
     "MOD_NAME_REPORTS": "रिपोर्ट्स",
@@ -22,8 +22,8 @@
     "MOD_NAME_INTEGRATIONS": "एकीकरण"
   },
   "TABS": {
-    "TAB_NAME_EMPLOYEE": "कर्मचारी",
-    "TAB_NAME_EMPLOYEE_LIST": "सूची",
+    "TAB_NAME_REPORTS": "कर्मचारी",
+    "TAB_NAME_REPORTS_LIST": "सूची",
     "TAB_NAME_EMPLOYEE_DETAILS": "विवरण",
     "TAB_NAME_ROLE": "भूमिका",
     "TAB_NAME_ROLE_LIST": "भूमिका सूची",

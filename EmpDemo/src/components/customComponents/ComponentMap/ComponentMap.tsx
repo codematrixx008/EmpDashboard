@@ -7,6 +7,7 @@ import { useDepartmentService } from "../../utils/Services/DepartmentService.ts"
 import Details from "../../pages/Details.tsx";
 import PageGrid from "../PageGrid/PageGrid.tsx";
 import { useEmployeeDetailService } from "../../utils/Services/EmployeeDetailService.ts";
+import ReportsList from "../ReportsList/ReportsList.tsx";
 
 const ComponentMap = (): Record<number, React.ReactElement> => {
 
@@ -57,6 +58,11 @@ const ComponentMap = (): Record<number, React.ReactElement> => {
 
 
   return {
+    100: (
+      <ReportsList
+        key="reportList"
+      />
+    ),
     101: (
       <PageGrid
         key="employeeList"
