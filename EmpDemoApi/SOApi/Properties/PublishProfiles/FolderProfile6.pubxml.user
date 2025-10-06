@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Work\Project\Samples\EmpDemo-main\EmpDemo-main\EmpDemoApi\SOApi\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2025-10-06T07:20:28.7805306Z||;True|2025-10-06T12:47:00.8542272+05:30||;True|2025-10-06T12:07:53.4446235+05:30||;False|2025-10-06T12:07:25.7660418+05:30||;False|2025-10-06T12:07:11.1930449+05:30||;False|2025-10-06T12:06:50.7965183+05:30||;False|2025-10-06T12:06:43.1325220+05:30||;True|2025-10-06T12:06:20.1089940+05:30||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

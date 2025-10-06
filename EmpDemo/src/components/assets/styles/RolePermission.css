@@ -1,0 +1,118 @@
+.ct-role-permission-select-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.ct-role-permission-body-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ct-role-permission-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.ct-role-permission-button:hover {
+  background-color: #0056b3;
+}
+
+.ct-role-permission-table-container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid rgb(184, 184, 184);
+  flex: 1;
+}
+
+.ct-role-permission-grid {
+  border-collapse: collapse;
+  /* width: 100%; */
+  table-layout: fixed;
+}
+
+.ct-role-permission-grid-header .ct-role-permission-header-name {
+  min-width: 115px;
+  max-width: 115px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  padding: 2px;
+}
+
+.ct-role-permission-grid-header th,
+.ct-role-permission-grid td {
+  min-width: 60px;
+  max-width: 60px;
+  /* min-width: 115px;
+  max-width: 115px; */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  padding: 2px;
+}
+
+.bs-select-dropdown {
+  position: absolute;
+  z-index: 1000;
+}
+
+.ct-role-permission-header-cell {
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.ct-role-permission-sticky-column {
+  position: sticky;
+  left: 0;
+  background: #fbfbfb;
+  z-index: 2;
+}
+
+/* .ct-role-permission-grid-body tr {
+  height: 25px;
+} */
+
+.ct-role-permission-striped-row {
+  background-color: #f9f9f9;
+}
+
+.ct-role-permission-row {
+  background-color: white;
+}
+
+.ct-role-permission-data-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ct-role-permission-text-cell {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.ct-role-permission-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}

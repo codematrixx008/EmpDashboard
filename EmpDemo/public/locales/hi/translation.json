@@ -1,0 +1,89 @@
+{
+  "HEADER": {
+    "profile_name": "प्रोफ़ाइल नाम",
+    "ADVANCED_SEARCH": "उन्नत खोज",
+    "NOTIFICATIONS": "सूचनाएं",
+    "PROFILE": "प्रोफ़ाइल",
+    "SEARCH": "खोजें",
+    "DASHBOARD": "डैशबोर्ड",
+    "TOGGLE_SIDEBAR": "साइडबार टॉगल करें",
+    "LANGUAGES": "भाषा बदलें"
+  },
+  "Modules": {
+    "MOD_NAME_EMPLOYEE_RECORDS": "कर्मचारी अभिलेख",
+    "MOD_NAME_CALENDAR": "कैलेंडर",
+    "MOD_NAME_SALES_MARKETING": "बिक्री और विपणन",
+    "MOD_NAME_REPORTS": "रिपोर्ट्स",
+    "MOD_NAME_INSURANCE": "बीमा",
+    "MOD_NAME_INVESTMENTS": "निवेश",
+    "MOD_NAME_COMMISSION_UTILITIES": "कमीशन उपयोगिताएं",
+    "MOD_NAME_UTILITIES": "उपयोगिताएं",
+    "MOD_NAME_SETUP": "सेटअप",
+    "MOD_NAME_INTEGRATIONS": "एकीकरण"
+  },
+  "TABS": {
+    "TAB_NAME_EMPLOYEE": "कर्मचारी",
+    "TAB_NAME_EMPLOYEE_LIST": "सूची",
+    "TAB_NAME_EMPLOYEE_DETAILS": "विवरण",
+    "TAB_NAME_ROLE": "भूमिका",
+    "TAB_NAME_ROLE_LIST": "भूमिका सूची",
+    "TAB_NAME_ROLE_PERMISSION": "भूमिका अनुमति",
+    "TAB_NAME_DEPARTMENT": "विभाग"
+  },
+  "MENU_NAME": {
+    "MENU_NAME_ADD": "जोड़ें",
+    "MENU_NAME_EDIT": "संपादित करें",
+    "MENU_NAME_CSV": "CSV में निर्यात करें",
+"MENU_NAME_XLSX": "XLSX में निर्यात करें",
+"MENU_NAME_PDF": "PDF में निर्यात करें",
+    "MENU_NAME_CUSTOMIZE_COLUMNS": "कॉलम अनुकूलित करें",
+    "MENU_NAME_DELETE": "हटाएं",
+    "MENU_NAME_SEARCH": "खोजें",
+    "MENU_NAME_SAVE": "सहेजें",
+    "MENU_NAME_CANCEL": "रद्द करें",
+    "MENU_NAME_PREVIOUS": "पिछला",
+    "MENU_NAME_FORWARD": "आगे",
+    "MENU_NAME_ALL_MENU": "बर्गर मेनू",
+    "MENU_NAME_FILTER": "फ़िल्टर"
+  },
+  "GRID_HEADERS": {
+    "GRID_EMPLOYEE_NAME": "कर्मचारी का नाम",
+    "GRID_DEPARTMENT": "विभाग",
+    "GRID_GENDER": "लिंग",
+    "GRID_SALARY": "वेतन",
+    "GRID_IS_ACTIVE": "सक्रिय है",
+    "GRID_DOB": "जन्म तिथि",
+    "GRID_USER_ROLE_ID": "उपयोगकर्ता भूमिका आईडी",
+    "GRID_USER_ROLE_NAME": "उपयोगकर्ता भूमिका नाम",
+    "GRID_DEPARTMENT_ID": "विभाग आईडी",
+    "GRID_DEPARTMENT_NAME": "विभाग नाम",
+    "GRID_ADDRESS": "पता",
+    "GRID_CITY": "शहर",
+    "GRID_PINCODE": "पिनकोड",
+    "GRID_STATE": "राज्य",
+  "GRID_LINE1": "लाइन 1",
+  "GRID_LINE2": "लाइन 2",
+  "GRID_COUNTRY": "देश"
+  },
+  "GRID_PLACEHOLDER": {
+  "GRID_PLACEHOLDER_EMPLOYEE_NAME": "कर्मचारी का नाम दर्ज करें",
+  "GRID_PLACEHOLDER_DEPARTMENT": "विभाग का नाम चुनें",
+  "GRID_PLACEHOLDER_GENDER": "लिंग चुनें",
+  "GRID_PLACEHOLDER_SALARY": "वेतन दर्ज करें",
+  "GRID_PLACEHOLDER_DOB": "जन्म तिथि दर्ज करें",
+  "GRID_PLACEHOLDER_ADDRESS": "पता दर्ज करें",
+  "GRID_PLACEHOLDER_CITY": "शहर दर्ज करें",
+  "GRID_PLACEHOLDER_PINCODE": "पिनकोड दर्ज करें",
+   "GRID_PLACEHOLDER_LINE1": "लाइन 1 दर्ज करें",
+  "GRID_PLACEHOLDER_LINE2": "लाइन 2 दर्ज करें",
+  "GRID_PLACEHOLDER_COUNTRY": "देश चुनें",
+  "GRID_PLACEHOLDER_STATE": "राज्य दर्ज करें"
+},
+  "FOOTER": "इंक | सर्वाधिकार सुरक्षित",
+  "welcome": "मेरे ऐप में आपका स्वागत है",
+  "login": "लॉगिन",
+  "logout": "लॉगआउट",
+  "LOGIN": {
+    "LOGIN_SUCCESS": "लॉगिन सफल हुआ।"
+  }
+}

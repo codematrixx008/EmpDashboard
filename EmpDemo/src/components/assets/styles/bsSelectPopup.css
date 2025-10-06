@@ -1,0 +1,106 @@
+.custom-select-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    width: 100%;
+    /* max-width: 300px; */
+    /* Adjust for responsiveness */
+}
+
+.custom-select-container .select-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 6px 4px;
+    border: none;
+    border-radius: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+.select-menu-button {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.select-menu-button:hover {
+    background-color: #e7e7e7;
+}
+.menu-text {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #FFF;
+}
+
+/* Dropdown Styling */
+.custom-select-container .custom-select__control {
+    height: 28px !important;
+    min-height: 20px !important;
+    border: none !important;
+    font-size: 14px !important;
+}
+
+.custom-select-container .custom-select__control--is-focused {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Hide indicator separator */
+.custom-select-container .custom-select__indicator-separator {
+    display: none !important;
+}
+
+/* Adjust dropdown menu */
+.custom-select-container .custom-select__menu {
+    font-size: 12px !important;
+    position: absolute !important;
+    z-index: 1000 !important;
+}
+
+/* Popup Styling */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-popup-content {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+}
+
+.select-popup-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.select-popup-content button {
+    margin: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.css-b62m3t-container {
+    width: 100% !important;
+}
+
+.custom-select__indicator {
+    padding: 0px !important;
+}

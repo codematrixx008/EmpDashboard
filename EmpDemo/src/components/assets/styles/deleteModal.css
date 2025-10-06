@@ -1,0 +1,69 @@
+/* Overlay */
+.ct-delete-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup */
+.ct-delete-popup {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 350px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Delete Modal Content */
+.ct-delete-column-inputs-container {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button Container */
+.ct-delete-popup-button-container {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+/* Buttons */
+.ct-delete-popup-ActionButton {
+  background: #1080b5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.ct-delete-popup-ActionButton:hover {
+  background: #0a6a91;
+  box-shadow: 0px 1px 4px #000000;
+}
+
+.ct-delete-popup-ActionButton.close {
+  background: #ccc;
+  color: #333;
+}
+
+.ct-delete-popup-ActionButton.close:hover {
+  background: #aaa;
+}

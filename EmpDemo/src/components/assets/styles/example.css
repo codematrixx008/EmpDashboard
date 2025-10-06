@@ -1,0 +1,36 @@
+.responsive-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .responsive-grid > * {
+    flex: 1 1 calc(50% - 10px); /* Two items per row */
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-grid > * {
+      flex: 1 1 100%; /* One item per row on smaller screens */
+    }
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  
+
+
+
+  .align-left {
+    margin-right: auto;
+  }
+  
+  .align-right {
+    margin-left: auto;
+  }
+  

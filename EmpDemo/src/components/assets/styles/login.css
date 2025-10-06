@@ -1,0 +1,137 @@
+/* Layout Wrapper */
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Header on top */
+  .login-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    background-color: #fff;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .login-header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  /* Main Content Area */
+  .login-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Form Wrapper */
+  .ct-login-form-box {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .ct-login-form-text {
+    font-size: 2rem;
+  }
+  
+  /* Input group styling */
+  .ct-input-group {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.3s;
+  }
+  
+  .ct-input-group:focus-within {
+    border-color: #0d6efd;
+    /* box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25); */
+  }
+  
+  /* Input styling */
+  .ct-login-input {
+    border: none;
+    box-shadow: none !important;
+  }
+  
+  /* Remove border, background, and shadow from input */
+  .ct-login-input {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    flex: 1;
+  }
+  
+  .ct-login-input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  /* Icon/Text inside InputGroup */
+  .ct-login-input-text {
+    background: none !important;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* new  */
+  
+  /* Add this below your existing styles */
+  
+  /* Ensure container grows to full height */
+  .login-content > .container {
+    height: 100%;
+  }
+  
+  .ct-container {
+    margin: 0 2rem !important;
+  }
+  
+  /* Ensure image resizes well on small screens */
+  @media (max-width: 768px) {
+    .ct-login-form-box {
+      max-width: 100%;
+      /* padding: 0; */
+      /* margin: 0; */
+    }
+  
+    /* .ct-container {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  
+    .ct-login-form-box {
+      padding: 0 !important;
+    } */
+  
+    .login-header {
+      justify-content: center;
+      padding-left: 0;
+      height: auto;
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .login-header h1 {
+      font-size: 2rem;
+    }
+  
+    .ct-login-form-text {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    img {
+      max-height: 250px;
+      width: auto;
+    }
+  }

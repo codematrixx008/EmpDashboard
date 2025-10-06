@@ -1,0 +1,89 @@
+{
+  "HEADER": {
+    "profile_name": "Nom du profil",
+    "ADVANCED_SEARCH": "Recherche avancée",
+    "NOTIFICATIONS": "Notifications",
+    "PROFILE": "Profil",
+    "SEARCH": "Rechercher",
+    "DASHBOARD": "Tableau de bord",
+    "TOGGLE_SIDEBAR": "Basculer la barre latérale",
+    "LANGUAGES": "Changer de langue"
+  },
+  "Modules": {
+    "MOD_NAME_EMPLOYEE_RECORDS": "Dossiers des employés",
+    "MOD_NAME_CALENDAR": "Calendrier",
+    "MOD_NAME_SALES_MARKETING": "Ventes et marketing",
+    "MOD_NAME_REPORTS": "Rapports",
+    "MOD_NAME_INSURANCE": "Assurance",
+    "MOD_NAME_INVESTMENTS": "Investissements",
+    "MOD_NAME_COMMISSION_UTILITIES": "Utilitaires de commission",
+    "MOD_NAME_UTILITIES": "Utilitaires",
+    "MOD_NAME_SETUP": "Configuration",
+    "MOD_NAME_INTEGRATIONS": "Intégrations"
+  },
+  "TABS": {
+    "TAB_NAME_EMPLOYEE": "Employé",
+    "TAB_NAME_EMPLOYEE_LIST": "Liste",
+    "TAB_NAME_EMPLOYEE_DETAILS": "Détails",
+    "TAB_NAME_ROLE": "Rôle",
+    "TAB_NAME_ROLE_LIST": "Liste des rôles",
+    "TAB_NAME_ROLE_PERMISSION": "Autorisations du rôle",
+    "TAB_NAME_DEPARTMENT": "Département"
+  },
+  "MENU_NAME": {
+    "MENU_NAME_ADD": "Ajouter",
+    "MENU_NAME_EDIT": "Éditer",
+    "MENU_NAME_CSV": "Exporter en CSV",
+    "MENU_NAME_XLSX": "Exporter en XLSX",
+    "MENU_NAME_PDF": "Exporter en PDF",
+    "MENU_NAME_CUSTOMIZE_COLUMNS": "Personnaliser les colonnes",
+    "MENU_NAME_DELETE": "Supprimer",
+    "MENU_NAME_SEARCH": "Rechercher",
+    "MENU_NAME_SAVE": "Enregistrer",
+    "MENU_NAME_CANCEL": "Annuler",
+    "MENU_NAME_PREVIOUS": "Précédent",
+    "MENU_NAME_FORWARD": "Suivant",
+    "MENU_NAME_ALL_MENU": "Menu burger",
+    "MENU_NAME_FILTER": "Filtrer"
+  },
+  "GRID_HEADERS": {
+    "GRID_EMPLOYEE_NAME": "Nom de l'employé",
+    "GRID_DEPARTMENT": "Département",
+    "GRID_GENDER": "Sexe",
+    "GRID_SALARY": "Salaire",
+    "GRID_IS_ACTIVE": "Est actif",
+    "GRID_DOB": "Date de naissance",
+    "GRID_USER_ROLE_ID": "ID du rôle utilisateur",
+    "GRID_USER_ROLE_NAME": "Nom du rôle utilisateur",
+    "GRID_DEPARTMENT_ID": "ID du département",
+    "GRID_DEPARTMENT_NAME": "Nom du département",
+    "GRID_ADDRESS": "Adresse",
+    "GRID_CITY": "Ville",
+    "GRID_PINCODE": "Code Postal",
+    "GRID_STATE": "État",
+    "GRID_LINE1": "Ligne 1",
+    "GRID_LINE2": "Ligne 2",
+    "GRID_COUNTRY": "Pays"
+  },
+  "GRID_PLACEHOLDER": {
+    "GRID_PLACEHOLDER_EMPLOYEE_NAME": "Entrez le nom de l'employé",
+    "GRID_PLACEHOLDER_DEPARTMENT": "Sélectionnez le nom du département",
+    "GRID_PLACEHOLDER_GENDER": "Sélectionnez le sexe",
+    "GRID_PLACEHOLDER_SALARY": "Entrez le salaire",
+    "GRID_PLACEHOLDER_DOB": "Entrez la date de naissance",
+    "GRID_PLACEHOLDER_ADDRESS": "Entrez l'adresse",
+    "GRID_PLACEHOLDER_CITY": "Entrez la ville",
+    "GRID_PLACEHOLDER_PINCODE": "Entrez le code postal",
+    "GRID_PLACEHOLDER_LINE1": "Entrez la ligne 1",
+    "GRID_PLACEHOLDER_LINE2": "Entrez la ligne 2",
+    "GRID_PLACEHOLDER_COUNTRY": "Sélectionnez le pays",
+    "GRID_PLACEHOLDER_STATE": "Entrez l'état"
+  },
+  "FOOTER": "Inc | Tous droits réservés",
+  "welcome": "Bienvenue dans mon application",
+  "login": "Connexion",
+  "logout": "Déconnexion",
+  "LOGIN": {
+    "LOGIN_SUCCESS": "Connexion réussie."
+  }
+}

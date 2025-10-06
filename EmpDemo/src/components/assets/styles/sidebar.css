@@ -1,0 +1,66 @@
+.sidebar-container {
+  width: 200px;
+  background: #555;
+  color: white;
+  transition: width 0.3s;
+  padding: 10px;
+  height: 100%;
+
+  /* commented to show the tooltip */
+  /* overflow-y: auto;
+    overflow-x: hidden; */
+}
+
+.sidebar-container.minimized {
+  width: 50px;
+}
+
+.sidebar-menu-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.menu-button:hover {
+  background-color: #777777;
+}
+
+.menu-button-content {
+  justify-content: center;
+}
+
+.sidebar-menu-icon {
+  color: #fff;
+}
+
+.menu-text {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+/* active menu */
+.active-menu {
+  background-color: #777777;
+}
+
+@media (max-width: 450px) {
+  .sidebar-container {
+    width: auto !important;
+  }
+
+  .menu-text {
+    display: none;
+  }
+}

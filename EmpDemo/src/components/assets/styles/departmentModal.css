@@ -1,0 +1,170 @@
+/* .ct-section-modal-header {
+  height: 2.5rem;
+} */
+
+.ct-section-modal-title {
+  font-size: 1.1rem !important;
+}
+
+.ct-section-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.ct-section-left-section {
+  flex: 1;
+}
+
+.ct-section-list-container {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 5px;
+  /* background-color: #f9f9f9; */
+}
+
+/* .custom-department-input{
+
+} */
+
+/* d-flex align-items-center mb-2 px-2 py-1 rounded */
+.ct-section-list-containner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.1rem;
+  font-size: 13px;
+  /*padding: 0.5rem 0.5rem;
+  */
+  padding-left: 5px;
+  /* border-radius: 5px; */
+  /* font-size: 14px; */
+}
+
+.ct-section-button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch !important;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.ct-section-button {
+  padding: 0.2rem 0.3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 13px;
+  width: 100%;
+  transition: background-color 0.2s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.ct-section-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.ct-section-button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+/* Remove input focus border and shadow */
+.ct-section-left-section input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+/* Remove focus outline and shadow from input */
+.ct-section-left-section input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+/* .ct-section-button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: start;
+    align-items: flex-end;
+  }
+  
+  .ct-section-button {
+    padding: 0.4rem 1rem;
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    min-width: 80px;
+    transition: background-color 0.3s ease;
+  } */
+
+.ct-section-button:hover:not(:disabled) {
+  background-color: #084cdf;
+}
+
+.ct-section-button:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.ct-section-no-focus-border:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+/* input feild */
+.ct-section-input {
+  padding: 0.2rem 0.2rem;
+  /* border-radius: 5px; */
+  border: 1px solid #ced4da;
+  font-size: 14px;
+  width: 100%;
+  max-height: 25px;
+}
+
+.ct-section-input::placeholder {
+  font-size: 12px;
+  padding-left: 3px;
+}
+
+/* .ct-section-input::placeholder {
+  color: #6c757d !important;
+  opacity: 1 !important; 
+  font-size: 10px !important;
+} */
+
+.custom-spinner {
+  width: 1rem;
+  height: 1rem;
+  border-width: 2px;
+}
+
+.ct-department-hidden {
+  background-color: #e0e0e08c;
+}
+
+.ct-section-button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.ct-section-button-row {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 0.5rem;
+}

@@ -1,0 +1,70 @@
+
+:root {
+    --grey-color: #eeeeee;
+    --white-color: #ffffff;
+    --border-color: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.analytic-cards-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.analytic-cards-container .analytic-cards {
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: default;
+    width: 100%;
+}
+
+.analytic-cards-container .analytic-cards .analytic-cards-heading {
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+}
+
+.analytic-cards-container .analytic-cards .analytic-cards-numbers {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.charts-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.charts-main-container .charts-wrapper {
+    width: 32%;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.charts-main-container .charts-wrapper .charts-box {
+   height: 160px ;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+

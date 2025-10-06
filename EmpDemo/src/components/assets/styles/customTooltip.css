@@ -1,0 +1,14 @@
+.tooltip-fixed {
+  position: fixed !important;
+  z-index: 99999 !important;
+  pointer-events: none;
+  background: #222222;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  white-space: nowrap;
+  transition: opacity 0.15s;
+  opacity: 0.95;
+}

@@ -1,0 +1,92 @@
+{
+  "HEADER": {
+    "profile_name": "Profile Name",
+    "ADVANCED_SEARCH": "Advanced Search",
+    "NOTIFICATIONS": "Notifications",
+    "PROFILE": "Profile",
+    "SEARCH": "Search",
+    "DASHBOARD": "Dashboard",
+    "TOGGLE_SIDEBAR": "Toggle Sidebar",
+    "LANGUAGES": "Change Language"
+  },
+  "Modules": {
+    "MOD_NAME_EMPLOYEE_RECORDS": "Employee Records",
+    "MOD_NAME_CALENDAR": "Calendar",
+    "MOD_NAME_SALES_MARKETING": "Sales & Marketing",
+    "MOD_NAME_REPORTS": "Reports",
+    "MOD_NAME_INSURANCE": "Insurance",
+    "MOD_NAME_INVESTMENTS": "Investments",
+    "MOD_NAME_COMMISSION_UTILITIES": "Commission Utilities",
+    "MOD_NAME_UTILITIES": "Utilities",
+    "MOD_NAME_SETUP": "Setup",
+    "MOD_NAME_INTEGRATIONS": "Integrations"
+  },
+  "TABS": {
+    "TAB_NAME_EMPLOYEE": "Employee",
+    "TAB_NAME_EMPLOYEE_LIST": "List",
+    "TAB_NAME_EMPLOYEE_DETAILS": "Details",
+    "TAB_NAME_ROLE": "Role",
+    "TAB_NAME_ROLE_LIST": "Role List",
+    "TAB_NAME_ROLE_PERMISSION": "Role Permission",
+    "TAB_NAME_DEPARTMENT": "Department"
+  },
+  "MENU_NAME": {
+    "MENU_NAME_ADD": "Add",
+    "MENU_NAME_EDIT": "Edit",
+    "MENU_NAME_CSV": "Export to CSV",
+    "MENU_NAME_XLSX": "Export to XLSX",
+    "MENU_NAME_PDF": "Export to PDF",
+    "MENU_NAME_CUSTOMIZE_COLUMNS": "Customize Columns",
+    "MENU_NAME_DELETE": "Delete",
+    "MENU_NAME_SEARCH": "Search",
+    "MENU_NAME_SAVE": "Save",
+    "MENU_NAME_CANCEL": "Cancel",
+    "MENU_NAME_PREVIOUS": "Previous",
+    "MENU_NAME_FORWARD": "Forward",
+    "MENU_NAME_ALL_MENU": "All Menu",
+    "MENU_NAME_FILTER": "Filter"
+  },
+  "GRID_HEADERS": {
+    "GRID_EMPLOYEE_NAME": "Employee Name",
+    "GRID_DEPARTMENT": "Department",
+    "GRID_GENDER": "Gender",
+    "GRID_SALARY": "Salary",
+    "GRID_IS_ACTIVE": "IsActive",
+    "GRID_DOB": "DOB",
+    "GRID_USER_ROLE_ID": "UserRole Id",
+    "GRID_USER_ROLE_NAME": "UserRole Name",
+    "GRID_DEPARTMENT_ID": "Department Id",
+    "GRID_DEPARTMENT_NAME": "Department Name",
+    "GRID_ADDRESS": "Address",
+    "GRID_CITY": "City",
+    "GRID_PINCODE": "Pincode",
+    "GRID_STATE": "State",
+    "GRID_LINE1": "Line 1",
+    "GRID_LINE2": "Line 2",
+    "GRID_COUNTRY": "Country",
+    "GRID_COMPANY": "Grid Company",
+    "GRID_OCCUPATION": "Occupation",
+    "GRID_JOBTITLE": "Job Title"
+  },
+  "GRID_PLACEHOLDER": {
+    "GRID_PLACEHOLDER_EMPLOYEE_NAME": "Enter Employee Name",
+    "GRID_PLACEHOLDER_DEPARTMENT": "Select Department Name",
+    "GRID_PLACEHOLDER_GENDER": "Select Gender",
+    "GRID_PLACEHOLDER_SALARY": "Enter Salary",
+    "GRID_PLACEHOLDER_DOB": "Enter Date of Birth",
+    "GRID_PLACEHOLDER_ADDRESS": "Enter Address",
+    "GRID_PLACEHOLDER_CITY": "Enter City",
+    "GRID_PLACEHOLDER_PINCODE": "Enter Pincode",
+    "GRID_PLACEHOLDER_LINE1": "Enter Line 1",
+    "GRID_PLACEHOLDER_LINE2": "Enter Line 2",
+    "GRID_PLACEHOLDER_COUNTRY": "Select Country",
+    "GRID_PLACEHOLDER_STATE": "Enter State"
+  },
+  "FOOTER": "Inc | All Rights Reserved",
+  "welcome": "Welcome to my app",
+  "login": "Login",
+  "logout": "Logout",
+  "LOGIN": {
+    "LOGIN_SUCCESS": "Login Successfully."
+  }
+}
