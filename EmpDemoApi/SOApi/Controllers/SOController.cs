@@ -113,7 +113,7 @@ namespace SoApi.Controllers
                 {
                     UserID = user.UserID,
                     SelectedModuleID = 1,
-                    ModuleIdList = "1,2,3,4",
+                    ModuleIdList = "1",
                     SelectedLanguageId = 1,
                     Token = token,
                     RefreshToken = refreshToken
