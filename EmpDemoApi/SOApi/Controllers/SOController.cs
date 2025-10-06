@@ -411,6 +411,11 @@ namespace SoApi.Controllers
             var result = await _repository.GetColumnHeaderSchemaAsync(columnHeaderSchemaRequest);
             return Ok(result);
         }
+        [HttpGet("NetworkCheck")]
+        public IActionResult NetworkCheck()
+        {
+            return Ok(new { message = "Network working successfully", status = true });
+        }
 
     }
 }
