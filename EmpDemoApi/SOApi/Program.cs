@@ -36,6 +36,7 @@ builder.Services.AddCors(options =>
                 "https://localhost:998",
                 "https://localhost:999",
                 "http://192.168.1.74:3000", //
+                "http://192.168.1.73:3000", // For Sanket
                 "https://192.168.1.74:3000", //
                 "https://192.168.1.73:3000" //
 
