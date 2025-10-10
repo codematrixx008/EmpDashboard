@@ -114,3 +114,67 @@ PRINT @sql;  -- View what will be dropped first
 
 
 
+
+
+
+-- USE [SO];
+SET NOCOUNT ON;
+
+-- 1) All tables from the script
+DECLARE @AllScriptTables TABLE (Tbl sysname PRIMARY KEY);
+INSERT INTO @AllScriptTables (Tbl) VALUES
+(N'_AppGridColumnMaster'),(N'_AppGridMaster'),(N'_AppHamburgerModuleMaster'),
+(N'_AppModulesMaster'),(N'_AppSectionMapping'),(N'_AppTabMaster'),
+(N'_AppUserGridSchema'),(N'_AppViewColumnMaster'),(N'_ButtonsList'),
+(N'_ChildTabs'),(N'_Department'),(N'_Gender'),(N'_GridHeading'),
+(N'_MenuItems'),(N'_Modules'),(N'_ModuleWiseTab'),(N'_PageGridColumns'),
+(N'_PageGridSettings'),(N'_pageGridTableData'),(N'_ParentTabs'),
+(N'_RolePermissionHeader'),(N'_SearchDropDownData'),(N'_UserModule'),
+(N'_UserViewMaster'),
+(N'AppColumnMaster'),(N'AppDropdownItemMaster'),(N'AppDropdownMaster'),
+(N'AppTableMaster'),(N'AppTabsMaster'),(N'AppUserMaster'),(N'AppViewMaster'),
+(N'tblAddresses'),(N'tblBusinessInformation'),(N'tblButtonAction'),
+(N'tblCurrency'),(N'tblEmployees'),(N'tblExecutionLogs'),
+(N'tblGridButtonActions'),(N'tblGridConfiguration'),(N'tblLanguage'),
+(N'tblLogin'),(N'tblRolePermission'),(N'tblUserRole'),
+(N'UserModuleTabsAccess'),(N'UserRefreshTokens'),(N'UserViewColumnMaster');
+
+-- 2) Tables to KEEP (used by Sp_GetUserModuleTabHierarchy / Sp_GetMenuForTab)
+DECLARE @Keep TABLE (Tbl sysname PRIMARY KEY);
+INSERT INTO @Keep (Tbl) VALUES
+(N'AppTabsMaster'),
+(N'UserModuleTabsAccess'),
+(N'tblButtonAction');
+
+-- 3) Compute existing drop targets from DB objects (exclude keepers)
+DECLARE @ToDrop TABLE (Tbl sysname PRIMARY KEY);
+INSERT INTO @ToDrop (Tbl)
+SELECT t.name
+FROM sys.tables t
+WHERE SCHEMA_NAME(t.schema_id) = 'dbo'
+  AND t.name IN (SELECT Tbl FROM @AllScriptTables)
+  AND t.name NOT IN (SELECT Tbl FROM @Keep);
+
+-- 4) Build dynamic DROP statements with IF EXISTS guard
+DECLARE @sql nvarchar(max) = N'';
+
+SELECT @sql = STRING_AGG(
+    N'IF OBJECT_ID(N''[dbo].[' + Tbl + N']'', N''U'') IS NOT NULL DROP TABLE [dbo].[' + Tbl + N'];',
+    CHAR(10)
+)
+FROM @ToDrop;
+
+-- 5) Review or run
+PRINT N'-- The following DROP statements will be executed:';
+PRINT @sql;
+
+EXEC sys.sp_executesql @sql;
+
+-- (Optional) Show what remained vs considered
+PRINT N'-- Kept tables (not dropped):';
+SELECT Tbl FROM @Keep;
+PRINT N'-- Dropped tables (existed and were in the script, excluding keep):';
+SELECT Tbl FROM @ToDrop;
+
+
+
