@@ -1,0 +1,116 @@
+
+TRUNCATE TABLE [_AppFormTabButtonGrid];
+TRUNCATE TABLE [_AppFormTabButtonGridButton];
+TRUNCATE TABLE [_AppFormTabButtonGridButtonPermission];
+TRUNCATE TABLE [_AppFormTabGrid];
+TRUNCATE TABLE [_AppFormTabGridColumn];
+TRUNCATE TABLE [_AppFormTabGridPermission];
+TRUNCATE TABLE [_AppFormTabPermission];
+TRUNCATE TABLE [_AppFormTabSection];
+TRUNCATE TABLE [_AppFormTabSectionField];
+TRUNCATE TABLE [_AppFormTabSectionFieldPermission];
+TRUNCATE TABLE [_AppPage];
+TRUNCATE TABLE [_AppPageGrid];
+TRUNCATE TABLE [_AppPageGridColumn];
+TRUNCATE TABLE [_AppPageGridPermission];
+TRUNCATE TABLE [_AppPagePermission];
+TRUNCATE TABLE [_AppPageSection];
+TRUNCATE TABLE [_AppPageSectionField];
+TRUNCATE TABLE [_AppPageSectionFieldPermission];
+TRUNCATE TABLE [_AppPageTab];
+TRUNCATE TABLE [_AppPageTabPermission];
+TRUNCATE TABLE [_AppReport];
+TRUNCATE TABLE [_AppReportPermission];
+TRUNCATE TABLE [_AppRole];
+TRUNCATE TABLE [_AppRolePermission];
+TRUNCATE TABLE [_AppUser];
+TRUNCATE TABLE [_AppUserRole];
+TRUNCATE TABLE [_AppUserRolePermission];
+TRUNCATE TABLE [_AppWebLink];
+TRUNCATE TABLE [_AppWebLinkPermission];
+TRUNCATE TABLE [_PageGrid];
+TRUNCATE TABLE [_PageGridColumn];
+TRUNCATE TABLE [_PageGridColumnPermission];
+TRUNCATE TABLE [_User];
+TRUNCATE TABLE [_UserRole];
+TRUNCATE TABLE [_UserRolePermission];
+
+
+
+DROP TABLE IF EXISTS [_AppFormTabButtonGrid];
+DROP TABLE IF EXISTS [_AppFormTabButtonGridButton];
+DROP TABLE IF EXISTS [_AppFormTabButtonGridButtonPermission];
+DROP TABLE IF EXISTS [_AppFormTabGrid];
+DROP TABLE IF EXISTS [_AppFormTabGridColumn];
+DROP TABLE IF EXISTS [_AppFormTabGridPermission];
+DROP TABLE IF EXISTS [_AppFormTabPermission];
+DROP TABLE IF EXISTS [_AppFormTabSection];
+DROP TABLE IF EXISTS [_AppFormTabSectionField];
+DROP TABLE IF EXISTS [_AppFormTabSectionFieldPermission];
+DROP TABLE IF EXISTS [_AppPage];
+DROP TABLE IF EXISTS [_AppPageGrid];
+DROP TABLE IF EXISTS [_AppPageGridColumn];
+DROP TABLE IF EXISTS [_AppPageGridPermission];
+DROP TABLE IF EXISTS [_AppPagePermission];
+DROP TABLE IF EXISTS [_AppPageSection];
+DROP TABLE IF EXISTS [_AppPageSectionField];
+DROP TABLE IF EXISTS [_AppPageSectionFieldPermission];
+DROP TABLE IF EXISTS [_AppPageTab];
+DROP TABLE IF EXISTS [_AppPageTabPermission];
+DROP TABLE IF EXISTS [_AppReport];
+DROP TABLE IF EXISTS [_AppReportPermission];
+DROP TABLE IF EXISTS [_AppRole];
+DROP TABLE IF EXISTS [_AppRolePermission];
+DROP TABLE IF EXISTS [_AppUser];
+DROP TABLE IF EXISTS [_AppUserRole];
+DROP TABLE IF EXISTS [_AppUserRolePermission];
+DROP TABLE IF EXISTS [_AppWebLink];
+DROP TABLE IF EXISTS [_AppWebLinkPermission];
+DROP TABLE IF EXISTS [_PageGrid];
+DROP TABLE IF EXISTS [_PageGridColumn];
+DROP TABLE IF EXISTS [_PageGridColumnPermission];
+DROP TABLE IF EXISTS [_User];
+DROP TABLE IF EXISTS [_UserRole];
+DROP TABLE IF EXISTS [_UserRolePermission];
+
+
+
+DROP PROCEDURE IF EXISTS [dbo].[Sp_GetUserModuleTabHierarchy];
+DROP PROCEDURE IF EXISTS [dbo].[Sp_GetMenuForTab];
+DROP PROCEDURE IF EXISTS [dbo].[Sp_GetDetailStructure];
+DROP PROCEDURE IF EXISTS [dbo].[Sp_GetDropdownListByTabId];
+DROP PROCEDURE IF EXISTS [dbo].[Sp_GetDetailPageData];
+DROP PROCEDURE IF EXISTS [dbo].[Sp_ManageEmployeeData];
+DROP PROCEDURE IF EXISTS [dbo].[Sp_ManageGridTableData];
+DROP PROCEDURE IF EXISTS [dbo].[Usp_UpdateGridSettingsJson];
+
+
+
+
+-- Drop all other tables except ones used in Sp_GetUserModuleTabHierarchy & Sp_GetMenuForTab
+DECLARE @sql NVARCHAR(MAX) = N'';
+
+SELECT @sql += 'DROP TABLE IF EXISTS [' + s.name + '].[' + t.name + '];' + CHAR(13)
+FROM sys.tables t
+JOIN sys.schemas s ON t.schema_id = s.schema_id
+WHERE t.name NOT IN (
+    '_AppPage',
+    '_AppPageTab',
+    '_AppPageTabPermission',
+    '_AppPageGrid',
+    '_AppPageGridPermission',
+    '_AppFormTabGrid',
+    '_AppFormTabGridPermission',
+    '_AppRolePermission',
+    '_AppRole',
+    '_AppUserRole',
+    '_AppUser'
+)
+ORDER BY t.name;
+
+PRINT @sql;  -- View what will be dropped first
+-- EXEC sp_executesql @sql; -- Uncomment to actually drop
+
+
+
+
