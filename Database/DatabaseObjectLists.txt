@@ -164,6 +164,27 @@ SELECT @sql = STRING_AGG(
 )
 FROM @ToDrop;
 
+
+-- 4) Drop each table individually (no STRING_AGG, no FK handling)
+DECLARE @tbl sysname, @sql nvarchar(max);
+
+DECLARE cur CURSOR LOCAL FAST_FORWARD FOR
+  SELECT Tbl FROM @ToDrop ORDER BY Tbl;
+
+OPEN cur;
+FETCH NEXT FROM cur INTO @tbl;
+WHILE @@FETCH_STATUS = 0
+BEGIN
+  SET @sql = N'IF OBJECT_ID(N''[dbo].[' + @tbl + N']'', N''U'') IS NOT NULL
+               DROP TABLE [dbo].[' + @tbl + N'];';
+  PRINT @sql;  -- optional: log what’s being executed
+  EXEC sys.sp_executesql @sql;
+
+  FETCH NEXT FROM cur INTO @tbl;
+END
+CLOSE cur; DEALLOCATE cur;
+
+
 -- 5) Review or run
 PRINT N'-- The following DROP statements will be executed:';
 PRINT @sql;
@@ -175,6 +196,7 @@ PRINT N'-- Kept tables (not dropped):';
 SELECT Tbl FROM @Keep;
 PRINT N'-- Dropped tables (existed and were in the script, excluding keep):';
 SELECT Tbl FROM @ToDrop;
+
 
 
 
